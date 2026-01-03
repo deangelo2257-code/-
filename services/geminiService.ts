@@ -2,6 +2,13 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { Flashcard, Era, Difficulty } from "../types";
 
+// Declare process for TypeScript to satisfy the compiler during the build process
+declare const process: {
+  env: {
+    API_KEY: string;
+  };
+};
+
 export const generateHistoryCards = async (era: Era, difficulty: Difficulty): Promise<Flashcard[]> => {
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   
