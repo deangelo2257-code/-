@@ -1,0 +1,5 @@
+{
+  "name": "수능 한국사 FlashMaster",
+  "description": "A specialized flashcard application for Korean CSAT (Suneung) history preparation, powered by Gemini AI to generate high-yield exam questions and explanations.",
+  "requestFramePermissions": []
+}
